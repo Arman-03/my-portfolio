@@ -1,26 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akhtar | Terminal Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div id="terminal">
-        <div id="output"></div>
-        <div class="prompt-container">
-            <span class="prompt">guest@akhtar.portfolio:~$ </span>
-            <div class="input-line">
-                <span id="input-text"></span>
-                <div id="cursor"></div>
-            </div>
-        </div>
-        <input type="text" id="hidden-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-    </div>
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Akthar’s World — K N Akthar Shaik</title>
+    <meta
+      name="description"
+      content="The portfolio of K N Akthar Shaik, CSE student at IIIT Hyderabad — as a pixel-art world you can walk around in. Projects, leadership, skills and contact."
+    />
+    <meta name="theme-color" content="#3d8a49" />
+    <meta property="og:title" content="Akthar’s World" />
+    <meta property="og:description" content="A portfolio you can walk around in. Explore the town to discover projects, roles and a secret or two." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'><rect width='16' height='16' rx='3' fill='%233d8a49'/><path d='M3 12h10v1H3zM4 7h8v5H4zM3 6h10v1H3zM5 5h6v1H5zM6 4h4v1H6z' fill='%23f7e6c4'/><path d='M7 9h2v3H7z' fill='%233f2631'/></svg>"
+    />
+  </head>
+  <body>
+    <div id="game" aria-hidden="true"></div>
+    <div id="ui"></div>
+    <div id="boot" role="status"><div class="boot-inner"><div class="boot-logo">Akthar’s World</div><div class="boot-bar"><i></i></div><p>Loading the world…</p></div></div>
+    <noscript>
+      <main style="font-family: system-ui, sans-serif; max-width: 640px; margin: 3rem auto; padding: 0 1rem; color: #3f2631">
+        <h1>K N Akthar Shaik</h1>
+        <p>CSE undergrad at IIIT Hyderabad. This portfolio is an interactive pixel-art world and needs JavaScript.</p>
+        <p>
+          <a href="mailto:akthar.shai@students.iiit.in">Email</a> ·
+          <a href="https://github.com/Arman-03">GitHub</a> ·
+          <a href="https://linkedin.com/in/k-n-akthar-shaik">LinkedIn</a>
+        </p>
+      </main>
+    </noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
